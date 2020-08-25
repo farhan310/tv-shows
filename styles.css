@@ -1,3 +1,10 @@
 body {
-  background-color: hotpink;
+  background-color: whitesmoke;
+}
+
+* {
+  display: grid;
+  align-items: center;
+  padding-left: 10rem;
+  padding-right: 10rem;
 }

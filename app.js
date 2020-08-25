@@ -1,6 +1,17 @@
-import React from "react"
-import ReactDOM from "react-dom"
+import React from 'react';
+import ReactDOM from 'react-dom';
 
-const myGreeting = <h1>Hello World!</h1>
+import Product from './componants/Product';
 
-ReactDOM.render(myGreeting, document.querySelector('#root'))
+const App = () => (
+  <div>
+    <Product raw="🐓" cooked="🍗" />
+    <Product raw="🥚" cooked="🍳" />
+    <Product raw="🐄" cooked=" 🍔" />
+    <Product raw="🥔" cooked="🍟" />
+    <Product raw="🦐" cooked="🍤" />
+    <Product raw="🌽" cooked="🍿" />
+  </div>
+);
+
+ReactDOM.render(<App />, document.querySelector('#root'));
